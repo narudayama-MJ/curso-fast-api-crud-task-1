@@ -40,7 +40,7 @@ def phone(
     phone: Annotated[
         str,
         Query(
-            pattern=r"^\+?\d{1,3}\s?\d{3}\s?\d{2}[-\s]?\d{2}[-\s]?\d{2}$",
+            pattern=r"^\+?\d{1,3}\s?\d{3}\s?\d{2}[-\s]?\d{2}[-\s]?\d{2}$", example="+34 111 12-34-58",
             description="Teléfono con formato +34 111 12-34-56"
         )
     ]

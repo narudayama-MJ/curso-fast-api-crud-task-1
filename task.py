@@ -28,7 +28,7 @@ def update(index: int, task: Task):
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
                             detail='Task ID does not exist')
     
-    task_list[index] = Task
+    task_list[index] = task
     # task_list[index].status = status
     return { "tasks": task_list}
 
