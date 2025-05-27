@@ -4,6 +4,7 @@ from typing import Annotated
 from fastapi import Path
 
 from task import task_router
+from myupload import upload_router
 
 app = FastAPI()
 
@@ -71,3 +72,4 @@ def list_products(
 
 app.include_router(router)
 app.include_router(task_router, prefix='/tasks')
+app.include_router(upload_router, prefix='/upload')
